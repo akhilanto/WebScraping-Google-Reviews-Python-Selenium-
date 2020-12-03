@@ -23,13 +23,13 @@ ReviewDescription = []
 TotalReviewsByUser = []
 webdriver_obj = []
 thisreview =[]
-print '!!!'
+print('!!!')
 time.sleep(3)
 last_len = 0
 
 def  get_reviews(thisreview):
     global last_len
-    print "Don't Stop"
+    print("Don't Stop")
     for webdriver_obj in thisreview.find_elements_by_class_name("WMbnJf"):
         Name = webdriver_obj.find_element_by_class_name("Y0uHMb")
         Reviewer.append(Name.text)
